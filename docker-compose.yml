@@ -1,0 +1,8 @@
+version: '3'
+services:
+  app1:
+    container_name: app1
+    build: ./app1
+    volumes:
+      - ./app1:/code
+    tty: true  # Keeps the container running and interactive
